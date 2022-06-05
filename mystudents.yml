@@ -1,0 +1,26 @@
+---
+- mystudents:
+  - name: anil
+    phone: 8866303583
+    pincode: 515134
+    address: 
+      - doarno: 123
+      - village: ptp
+      - pincode: 514
+
+
+  - name: sunil
+    phone: 7981035468
+    pincode: 1245
+    address: 
+      - doarno: 156
+      - village: ktc
+      - pincode: 562
+
+  - name: sujith
+    phone: 854584
+    pincode: 12362
+    address: 
+      - doarno: 123
+      - village: ktc
+      - pincode: 562 
