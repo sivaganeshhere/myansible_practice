@@ -12,6 +12,6 @@
      service:
       name: apache2
       state: restarted
-     when: ansible_os_family == "Redhat"
+     when: ansible_os_family == "Debian"
   
 
