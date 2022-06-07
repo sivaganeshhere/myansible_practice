@@ -10,7 +10,7 @@
    - name: i want to start the server Redhat
      service:
       name: httpd
-      state: restarted
+      state: started
      when: ansible_os_family == "Redhat"
   
 
