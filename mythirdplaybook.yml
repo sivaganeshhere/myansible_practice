@@ -1,8 +1,8 @@
 ---
 - hosts: all
-  yum:
+  tasks:
    - name: i want to install webserver Redhat
-     apt:
+     yum:
       name: httpd
       state: present
      when: ansible_os_family == "Redhat" 
