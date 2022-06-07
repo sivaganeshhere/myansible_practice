@@ -1,7 +1,6 @@
 ---
 - hosts: all
-  become: yes
-  tasks:
+  yum:
    - name: i want to install webserver Redhat
      apt:
       name: httpd
