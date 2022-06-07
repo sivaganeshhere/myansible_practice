@@ -6,11 +6,12 @@
      apt:
       name: apache2
       state: present
+     when: ansible_os_family == "Redhat" 
 
    - name: i want to start the server
      service:
       name: apache2
       state: restarted
-     when: ansible_os_family == "Debain"
+     when: ansible_os_family == "Redhat"
   
 
