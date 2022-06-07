@@ -2,16 +2,16 @@
 - hosts: all
   become: yes
   tasks:
-   - name: i want to install webserver
+   - name: i want to install webserver Redhat
      apt:
-      name: apache2
+      name: httpd
       state: present
      when: ansible_os_family == "Redhat" 
 
-   - name: i want to start the server
+   - name: i want to start the server Redhat
      service:
-      name: apache2
+      name: httpd
       state: restarted
-     when: ansible_os_family == "Debian"
+     when: ansible_os_family == "Redhat"
   
 
