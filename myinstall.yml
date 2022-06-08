@@ -7,6 +7,7 @@
        name: "{{myjavapackonubuntu}}"
        state: present
      when: ansible_os_family =="Debian"
+
    - name: i want to install java on redhat
      yum:
        name: "{{myjavapackonredhat}}"
